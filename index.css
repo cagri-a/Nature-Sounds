@@ -1,0 +1,154 @@
+* *,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    background: url(https://images.unsplash.com/photo-1515984977862-1c7201ef324d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: whitesmoke;
+    opacity: .7;
+    border: white 5px;
+    border-radius: 5%;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.938);
+    cursor: grab;
+    transition: all .07s;
+}
+
+img{
+    width: 17px;
+    height: 17px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .container {
+
+        width: 600px;
+    }
+
+    .container div{
+        font-size: 1.5rem;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        width: 400px;
+        height: auto 0;
+        flex-direction: row;
+    }
+
+
+    .container div {
+        width: 50px;
+        height: 50px;
+        border: 5px;
+        margin: 2.5px;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: auto;
+    }
+
+
+    .container div {
+        width: 30px;
+        height: 30px;
+        margin: 2px;
+        font-size: 0.7rem;
+    }
+
+}
+
+
+
+footer{
+    position:absolute;
+   bottom:0;
+   left: 0;
+   width:100%;
+   height: auto;
+   background-color: black;
+   opacity: 0.7;
+   position: absolute;
+   color: rgb(255, 255, 255);
+   font-family: 'Oswald', sans-serif;
+   font-weight: 1000;
+   font-size: 1rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+footer a::after{
+    color: whitesmoke;
+}
+
+footer a:hover{
+    color: rgb(80, 106, 255);
+}
+
+kbd{
+    font-size: 0.9rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+
+.changeDiv {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transform: scale(1.1);
+}
